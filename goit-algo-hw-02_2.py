@@ -17,3 +17,5 @@ def is_palindrome(string):
             return False
     
     return True
+# Виклик функції та вивід результату
+print(is_palindrome("Anna"))
