@@ -9,7 +9,6 @@ def generate_request(request_queue, request_id):
     request_queue.put(request_data)
     print(f"A new application has been created: {request_data}")
   
-
 # Функція для обробки заявок
 def process_request():
     if not request_queue.empty():
@@ -27,11 +26,11 @@ def main():
 
     try:
         while True:
-            time.sleep(5)       # Затримка на 5 секунду
+            time.sleep(5)      
             if random.choice([True, False]):
                 request_id += 1
                 generate_request(request_queue, request_id)
-                # Щбробка заявок
+                # Обробка заявок
             if random.choice([True, False]):
                 process_request()
 
