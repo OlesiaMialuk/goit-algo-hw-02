@@ -26,7 +26,7 @@ def main():
 
     try:
         while True:
-            time.sleep(5)      
+            time.sleep(3)      
             if random.choice([True, False]):
                 request_id += 1
                 generate_request(request_queue, request_id)
